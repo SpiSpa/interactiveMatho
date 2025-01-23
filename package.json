@@ -1,0 +1,11 @@
+{
+  "name": "interactive_matho",
+  "version": "1.0.0",
+  "description": "learning how to use node.js and sass by making a math game",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sara Bellus",
+  "license": "ISC"
+}

@@ -1,0 +1,12 @@
+$a-image-size: 90%;
+$a-border-color: black;
+$header-size: 30px;
+
+.answers {
+    max-width: $a-image-size;
+    border: 1px solid $a-border-color;
+}
+
+.pressed {
+    opacity: 0.2;
+}
