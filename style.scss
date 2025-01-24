@@ -1,10 +1,13 @@
-$a-image-size: 90%;
+$a-image-size: 100%;
 $a-border-color: black;
 $header-size: 30px;
 
+.board-layout {
+    border: 5px solid $a-border-color;
+}
+
 .answers {
     max-width: $a-image-size;
-    border: 1px solid $a-border-color;
 }
 
 .pressed {

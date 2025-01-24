@@ -1,6 +1,13 @@
+.board-layout {
+  border: 5px solid black;
+}
+
 .answers {
-  max-width: 90%;
-  border: 1px solid black;
+  max-width: 100%;
+}
+
+.pressed {
+  opacity: 0.2;
 }
 
 /*# sourceMappingURL=style.css.map */
