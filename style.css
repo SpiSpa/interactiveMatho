@@ -1,5 +1,9 @@
+.body {
+  background-color: #F1F0E8;
+}
+
 .board-layout {
-  border: 5px solid black;
+  border: 2px solid #89A8B2;
 }
 
 .answers {
