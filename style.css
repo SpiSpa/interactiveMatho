@@ -5,30 +5,17 @@
   font-weight: 400;
   font-style: normal;
   color: #F1F0E8;
-  font-size: 2.2em;
+  font-size: 10vw;
 }
 
 .outer-board-layout {
   border: 20px solid #89A8B2;
   border-radius: 20px;
+  /* doesn't work
+  height: 100vh;
+  */
 }
 
-/*
-.top-left-board-layout{
-    @extend .board-layout;
-    border-top-left-radius: 15px;
-
-}
-.top-right-board-layout{
-    @extend .board-layout;
-    border-top-right-radius: 15px;
-}
-.outer-board-layout {
-    @extend .board-layout;
-    border-radius: 15px;
-    border: 6px;
-}
-*/
 body {
   background-color: #F1F0E8;
 }
