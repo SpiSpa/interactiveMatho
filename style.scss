@@ -4,32 +4,53 @@ $main-color: #F1F0E8;
 $board-color: #E5E1DA;
 $accent-color: #B3C8CF;
 
-  
-.board-layout {
-    border: 3px solid $border-color;
-    background-color: $border-color;
-    font-family: "Bubblegum Sans", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: $main-color;
-    font-size: 10vw;
-}
 
-.outer-board-layout {
-    @extend .board-layout;
-    border: 20px solid $border-color;
-    border-radius: 20px;
-    /* doesn't work
-    height: 100vh;
-    */
-}
 
 body {
-    background-color: $main-color;
-
+    background-color: $board-color;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+.big-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    height: 100vh;
+    background-color: $board-color;
+}
+
+.container {
+    background-color: $border-color;
+    grid-column-start: 2;
+    display: grid;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    height: 84vh;
+    width: 70vh;
+    border: 4vh solid $border-color;
+    border-radius: 5%;
+    justify-content: center;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 0.6vh;
+    row-gap: 0.6vh;
+}
+
 .answers {
-    max-width: $a-image-size;
+    height: 13.2vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.head-row {
+    height: 13.2vh;
+    font-size: 10vh;
+    text-align: center;
+    font-family: "Bubblegum Sans", serif;
+    color: $main-color;
 }
 
 .pressed {
