@@ -2,6 +2,12 @@ const rows = 5;
 const cols = 5;
 const boardArray = Array.from({ length: rows }, () => new Array(cols).fill(0));
 
+// changes each image to what order we need it.  
+window.onload = (event) => {
+    $('#00').prop('src', 'answers/flamingo.jpg');
+    console.log("images replaced");
+  };
+  
 console.log("board array created.")
 console.log(boardArray);
 function answerPressed(clickedImage){
