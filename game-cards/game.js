@@ -4,8 +4,13 @@ const boardArray = Array.from({ length: rows }, () => new Array(cols).fill(0));
 
 // changes each image to what order we need it.  
 window.onload = () => {
-    $('#00').prop('src', 'answers/flamingo.jpg');
-    console.log("images replaced");
+    for (i=0; i<5; i++){
+        for(j=0; j<5; j++){
+            imgID = `#${i}${j}`;
+            $(imgID).prop('src', 'answers/flamingo.jpg');
+        }
+    }
+    
   };
   
 console.log("board array created.")
